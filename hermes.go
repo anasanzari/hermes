@@ -69,6 +69,13 @@ type Body struct {
 	Signature    string   // Signature for the contacted person (default to 'Yours truly')
 	Title        string   // Title replaces the greeting+name when set
 	FreeMarkdown Markdown // Free markdown content that replaces all content other than header and footer
+	Images       []Image  // Adding images inside mail body
+}
+
+type Image struct {
+	ImageLink string
+	HyperLink string
+	Style     string
 }
 
 // ToHTML converts Markdown to HTML
