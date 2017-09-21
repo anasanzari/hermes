@@ -70,6 +70,17 @@ type Body struct {
 	Title        string   // Title replaces the greeting+name when set
 	FreeMarkdown Markdown // Free markdown content that replaces all content other than header and footer
 	Images       []Image  // Adding images inside mail body
+	ProductInfoInTop []ProductInfo //SellerPrime Product Info
+}
+
+type ProductInfo struct{
+	Name string
+	Image string
+	BSR string
+	Brand string
+	ASIN string
+	LQI string
+
 }
 
 type Image struct {
