@@ -71,6 +71,7 @@ type Body struct {
 	FreeMarkdown Markdown // Free markdown content that replaces all content other than header and footer
 	Images       []Image  // Adding images inside mail body
 	ProductInfoInTop []ProductInfo //SellerPrime Product Info
+	ProductInfoAfterIntros []ProductInfo //SellerPrime Product Info
 }
 
 type ProductInfo struct{
@@ -80,7 +81,7 @@ type ProductInfo struct{
 	Brand string
 	ASIN string
 	LQI string
-
+	RevenuePotential string
 }
 
 type Image struct {
