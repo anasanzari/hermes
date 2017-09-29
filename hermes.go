@@ -73,6 +73,7 @@ type Body struct {
 	ProductInfoInTop       []ProductInfo //SellerPrime Product Info
 	ProductInfoAfterIntros []ProductInfo //SellerPrime Product Info
 	MiddleIntros           []string
+	TopButton              []Action // Actions are a list of actions that the user will be able to execute via a button click
 }
 
 type ProductInfo struct {
