@@ -74,6 +74,8 @@ type Body struct {
 	ProductInfoAfterIntros []ProductInfo //SellerPrime Product Info
 	MiddleIntros           []string
 	TopButton              []Action // Actions are a list of actions that the user will be able to execute via a button click
+	TitleImage             string
+	LearnMoreLink          string
 }
 
 type ProductInfo struct {
@@ -218,3 +220,4 @@ func (h *Hermes) generateTemplate(email Email, tplt string) (string, error) {
 	t.Execute(&b, Template{*h, email})
 	return b.String(), nil
 }
+
